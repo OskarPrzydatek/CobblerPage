@@ -1,12 +1,9 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-  const testTemplate = require.resolve(`./src/templates/test.js`)
+  const pageInfoTemplate = require.resolve(`./src/templates/pageInfoTemplate.js`)
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark {
         edges {
           node {
             frontmatter {
@@ -24,7 +21,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
-      component: testTemplate,
+      component: pageInfoTemplate,
       context: {
         slug: node.frontmatter.slug,
       },
