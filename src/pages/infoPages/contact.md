@@ -9,5 +9,5 @@ content:
 - name: "Address"
   value: "Piccadilly st. 3767 London"
 - name: "Open"
-  value: "MON - FRI 9-17"
+  value: "MON-FRI 9-17"
 ---

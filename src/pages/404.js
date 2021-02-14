@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "gatsby"
 
 export default function NotFound() {
+
+  React.useEffect(() => {
+    document.title = `Broken Shoes?`
+  })
+
   return (
     <section>
       <article>
