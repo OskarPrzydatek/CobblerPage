@@ -14,7 +14,7 @@ export default function PageInfoTemplate({ data }) {
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <ul>
           {frontmatter.content.map(el => (
-            <li key={el}>{el}</li>
+            <li key={el.name}>{el.name} {el.value}</li>
           ))}
         </ul>
       </div>
@@ -29,7 +29,10 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
-        content
+        content {
+          name
+          value
+        }
       }
     }
   }
