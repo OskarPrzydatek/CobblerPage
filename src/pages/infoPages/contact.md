@@ -3,7 +3,7 @@ slug: "/contact"
 title: "Contact"
 content:
 - name: "Phone"
-  value: "111111111"
+  value: "111-11-1111"
 - name: "Mail"
   value: "jd.shoemaker@fmail.com"
 - name: "Address"

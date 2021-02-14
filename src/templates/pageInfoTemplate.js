@@ -1,14 +1,14 @@
-import React from "react"
-import { graphql } from "gatsby"
-import InfoContent from "../components/InfoContent/InfoContent"
-import BackToHome from "../components/BackToHome/BackToHome"
+import React from "react";
+import { graphql } from "gatsby";
+import InfoContent from "../components/InfoContent/InfoContent";
+import BackToHome from "../components/BackToHome/BackToHome";
 
 export default function PageInfoTemplate({ data }) {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
 
   React.useEffect(() => {
-    document.title = frontmatter.title
+    document.title = frontmatter.title;
   })
 
   return (
