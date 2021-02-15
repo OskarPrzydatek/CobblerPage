@@ -4,7 +4,6 @@ import styled, { keyframes } from "styled-components"
 import menuReducer from "../../reducers/menuReducer"
 
 // Components
-
 const Menu = styled.nav`
   width: 100%;
   margin-top: 3%;
@@ -34,7 +33,6 @@ const StyledLink = styled(Link)`
 `
 
 // keyframes
-
 const CreateBorder = keyframes`
   0% {width: 0; height: 7%}
   100% {width: 100%; height: 7%}

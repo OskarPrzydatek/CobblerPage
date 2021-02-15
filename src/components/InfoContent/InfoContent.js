@@ -1,21 +1,42 @@
 import React from "react";
+import styled from "styled-components"
+
+const InfoTable = styled.table`
+  width: 80%;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+`
+
+const InfoName = styled.th`
+  font-size: 3rem;
+`
+
+const ContentName = styled.td`
+  width: 60%;
+  text-align: left;
+`
+
+const ContentValue = styled.td`
+  width: 40%;
+  text-align: right;
+`
 
 export default function InfoContent({ frontmatter }) {
   return (
-    <table>
+    <InfoTable>
       <thead>
       <tr>
-        <th colSpan={2}><h1>{frontmatter.title}</h1></th>
+        <InfoName colSpan={2}>{frontmatter.title}</InfoName>
       </tr>
       </thead>
       <tbody>
       {frontmatter.content.map(contentElement => (
         <tr>
-          <td>{contentElement.name}</td>
-          <td>{contentElement.value}</td>
+          <ContentName>{contentElement.name}</ContentName>
+          <ContentValue>{contentElement.value}</ContentValue>
         </tr>
       ))}
       </tbody>
-    </table>
+    </InfoTable>
   );
 }
