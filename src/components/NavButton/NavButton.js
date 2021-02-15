@@ -25,8 +25,7 @@ const RemoveBorder = keyframes`
   100% {width: 0; height: 7%}
 `
 
-// TODO: Use it in menu potion? - Let's try it!
-export default function BackToHome({ path }) {
+export default function NavButton({ path, label }) {
   const [hover, setHover] = React.useState('default')
 
   return (
@@ -34,6 +33,6 @@ export default function BackToHome({ path }) {
       to={path}
       hover={hover}
       onMouseEnter={() => setHover('enter')}
-      onMouseLeave={() => setHover('leave')}>Back</StyledLink>
+      onMouseLeave={() => setHover('leave')}>{label}</StyledLink>
   );
 }

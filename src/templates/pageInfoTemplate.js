@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import InfoContent from "../components/InfoContent/InfoContent"
-import BackToHome from "../components/BackToHome/BackToHome"
+import NavButton from "../components/NavButton/NavButton"
 import Layout from "../styles/Layout"
 import { Photo } from "../components/Photo/Photo"
 
@@ -38,7 +38,9 @@ export default function PageInfoTemplate({ data }) {
         <Content>
           <ContentWrapper>
             <InfoContent frontmatter={frontmatter} />
-            <BackToHome path={"/"} />
+            <NavButton
+              path={"/"}
+              label={"Back"} />
           </ContentWrapper>
         </Content>
       </Layout>
