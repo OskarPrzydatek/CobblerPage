@@ -1,6 +1,7 @@
 ---
 slug: "/contact"
 title: "Contact"
+photo: "contact.jpg"
 content:
 - name: "Phone"
   value: "111-11-1111"

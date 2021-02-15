@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import NavBar from "../components/NavBar/NavBar"
 import Layout from "../styles/Layout"
+import { Photo } from "../components/Photo/Photo"
+import img from "../img/home.jpg"
 
 const Content = styled.article`
   display: flex;
@@ -43,7 +45,9 @@ export default function Home() {
 
   return (
     <Layout>
-      <div />
+      <Photo
+        img={img}
+        position={'100% 0'} />
       <Content>
         <ContentWrapper>
           <ContentMain>

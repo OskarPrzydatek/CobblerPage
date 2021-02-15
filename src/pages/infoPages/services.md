@@ -1,6 +1,7 @@
 ---
 slug: "/services"
 title: "Services"
+photo: "services.jpg"
 content: 
 - name: "Shoes & Slipper Resole"
   value: "10£"

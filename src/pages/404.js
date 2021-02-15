@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../styles/Layout"
+import { Photo } from "../components/Photo/Photo"
+import img from "../img/404.jpg"
 
 export default function NotFound() {
 
@@ -10,7 +12,9 @@ export default function NotFound() {
 
   return (
     <Layout>
-      <div className="photo" />
+      <Photo
+        img={img}
+        position={'80% 0'} />
       <article>
         <main>
           <h1>Broken Shoes?</h1>
