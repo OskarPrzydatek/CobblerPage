@@ -5,14 +5,14 @@ import Layout from "../styles/Layout"
 import { Photo } from "../components/Photo/Photo"
 import img from "../img/home.jpg"
 
-const Content = styled.article`
+const HomeContent = styled.article`
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 5%;
 `
 
-const ContentWrapper = styled.div`
+const HomeContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,7 +20,7 @@ const ContentWrapper = styled.div`
   height: 80%;
 `
 
-const ContentMain = styled.main`
+const HomeContentMain = styled.main`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@ const ContentMain = styled.main`
   align-items: center;
 `
 
-const Logo = styled.h1`
+const HomeLogo = styled.h1`
   font-size: 6rem;
   margin: 0;
 `
@@ -48,15 +48,15 @@ export default function Home() {
       <Photo
         img={img}
         position={'100% 0'} />
-      <Content>
-        <ContentWrapper>
-          <ContentMain>
-            <Logo>John Doe</Logo>
+      <HomeContent>
+        <HomeContentWrapper>
+          <HomeContentMain>
+            <HomeLogo>John Doe</HomeLogo>
             <NavBar />
-          </ContentMain>
+          </HomeContentMain>
           <Slogan>The London Cobbler Since 1990</Slogan>
-        </ContentWrapper>
-      </Content>
+        </HomeContentWrapper>
+      </HomeContent>
     </Layout>
   )
 }

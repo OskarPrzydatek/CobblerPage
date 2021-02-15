@@ -26,7 +26,7 @@ export default function NavBar() {
         </li>
         <li key={"contact"}>
           <NavButton
-            path={"/services"}
+            path={"/contact"}
             label={"Contact"} />
         </li>
       </MenuOptions>
