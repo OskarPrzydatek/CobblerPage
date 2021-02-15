@@ -1,22 +1,30 @@
-import React from "react";
-import { graphql } from "gatsby";
-import InfoContent from "../components/InfoContent/InfoContent";
-import BackToHome from "../components/BackToHome/BackToHome";
+import React from "react"
+import { graphql } from "gatsby"
+import InfoContent from "../components/InfoContent/InfoContent"
+import BackToHome from "../components/BackToHome/BackToHome"
+import Layout from "../styles/Layout"
 
 export default function PageInfoTemplate({ data }) {
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
 
   React.useEffect(() => {
-    document.title = frontmatter.title;
+    document.title = frontmatter.title
   })
 
   return (
-    <section>
-      <InfoContent frontmatter={frontmatter} />
-      <BackToHome />
+    <>
+      <Layout>
+        <div className="photo" />
+        <article>
+          <main>
+            <InfoContent frontmatter={frontmatter} />
+            <BackToHome />
+          </main>
+        </article>
+      </Layout>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </section>
+    </>
   )
 }
 
