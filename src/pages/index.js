@@ -10,6 +10,22 @@ const HomeContent = styled.article`
   justify-content: center;
   align-items: flex-start;
   padding: 5%;
+
+  @media screen and (max-width: 818px) {
+    height: 70%;
+    padding: 2%;
+  }
+
+  @media screen 
+  and (width: 768px) and (height: 1024px) {
+    width: 80%;
+    height: 60%;
+  }
+
+  @media screen and (width: 1024px) and (height: 1366px) {
+    width: 80%;
+    height: 60%;
+  }
 `
 
 const HomeContentWrapper = styled.div`
@@ -26,15 +42,29 @@ const HomeContentMain = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  @media screen and (max-width: 818px) {
+    justify-content: flex-start;
+  }
+
+  @media screen and (width: 768px) and (height: 1024px) {
+    justify-content: flex-start;
+  }
+  
+  @media screen and (width: 1024px) and (height: 1366px) {
+    justify-content: flex-start;
+  }
 `
 
 const HomeLogo = styled.h1`
-  font-size: 6rem;
+  font-size: 7vmax;
   margin: 0;
+  text-align: center;
 `
 
 const Slogan = styled.i`
-  font-size: 1.2rem;
+  font-size: 1.2vmax;
+  text-align: center;
 `
 
 export default function Home() {

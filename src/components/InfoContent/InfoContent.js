@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const InfoTable = styled.table`
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1.4vmax;
   border-collapse: collapse;
 `
 
@@ -12,11 +12,7 @@ const InfoName = styled.th`
 `
 
 const ContentItem = styled.tr`
-  transition: font-size .3s;
-  
-  &:hover {
-    font-size: 1.25rem;
-  }
+  cursor: pointer;
 `
 
 const ContentName = styled.td`
