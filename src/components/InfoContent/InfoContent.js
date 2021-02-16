@@ -11,6 +11,14 @@ const InfoName = styled.th`
   font-size: 3rem;
 `
 
+const ContentItem = styled.tr`
+  transition: font-size .3s;
+  
+  &:hover {
+    font-size: 1.25rem;
+  }
+`
+
 const ContentName = styled.td`
   width: 60%;
   text-align: left;
@@ -31,10 +39,10 @@ export default function InfoContent({ frontmatter }) {
       </thead>
       <tbody>
       {frontmatter.content.map(contentElement => (
-        <tr>
+        <ContentItem>
           <ContentName>{contentElement.name}</ContentName>
           <ContentValue>{contentElement.value}</ContentValue>
-        </tr>
+        </ContentItem>
       ))}
       </tbody>
     </InfoTable>
