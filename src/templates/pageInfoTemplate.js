@@ -10,6 +10,23 @@ const Content = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 818px) {
+    width: 100%;
+    height: 50%;
+  }
+  
+  // IPad
+  @media screen and (width: 1024px) and (height: 768px) {
+    width: 100%;
+    height: 50%;
+  }
+  
+  //IPad Pro
+  @media screen and (width: 1024px) and (height: 1366px) {
+    width: 100%;
+    height: 50%;
+  }
 `
 
 const ContentWrapper = styled.main`
@@ -19,6 +36,23 @@ const ContentWrapper = styled.main`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  
+  @media screen and (max-width: 818px) {
+    width: 100%;
+    height: 100%;
+  }
+  
+  // Ipad
+  @media screen and (width: 1024px) and (height: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  //IPad Pro
+  @media screen and (width: 1024px) and (height: 1366px) {
+    width: 100%;
+    height: 100%;
+  }
 `
 
 export default function PageInfoTemplate({ data }) {

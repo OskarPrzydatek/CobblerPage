@@ -5,14 +5,20 @@ import styled, { keyframes } from "styled-components"
 const StyledLink = styled(Link)`
   font-size: 1.6vmax;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 655px) and (max-width: 870px) {
+    font-size: 3vmax;
+  }
+  
+  @media screen and (max-width: 655px) {
     font-size: 2.6vmax;
   }
 
+  // IPad
   @media screen and (width: 1024px) and (height: 768px) {
     font-size: 2.8vmax;
   }
   
+  // IPad Pro
   @media screen and (width: 1024px) and (height: 1366px) {
     font-size: 3.2vmax;
   }

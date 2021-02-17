@@ -8,7 +8,6 @@ export const Photo = styled.div`
   background-position: ${props => props.position};
   filter: grayscale(100%) brightness(160%);
 
-  //TODO: Finish the responsiveness of the picture between 654px and 818px
   @media screen and (max-width: 818px) {
     width: 20%;
     height: 20%;
@@ -17,12 +16,20 @@ export const Photo = styled.div`
     background-position: center;
   }
   
-  @media screen and (max-height: 415px) {
+  @media screen and (max-height: 410px) {
     width: 20%;
     height: 20%;
     background-image: url(${logo});
     background-size: contain;
     background-position: center;
+  }
+  
+  @media screen and (width: 823px) and (height: 411px) {
+    background-image: url(${props => props.img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: ${props => props.position};
+    filter: grayscale(100%) brightness(160%);
   }
   
   // Surface Duo

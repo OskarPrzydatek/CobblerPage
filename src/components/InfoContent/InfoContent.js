@@ -3,12 +3,16 @@ import styled from "styled-components"
 
 const InfoTable = styled.table`
   width: 80%;
-  font-size: 1.4vmax;
+  font-size: 1.5vmax;
   border-collapse: collapse;
+  
+  @media screen and (max-width: 818px) {
+    font-size: 2vmax;
+  }
 `
 
 const InfoName = styled.th`
-  font-size: 3rem;
+  font-size: 3vmax;
 `
 
 const ContentItem = styled.tr`

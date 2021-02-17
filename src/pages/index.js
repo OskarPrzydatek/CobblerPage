@@ -16,10 +16,14 @@ const HomeContent = styled.article`
     padding: 2%;
   }
 
-  @media screen 
-  and (width: 768px) and (height: 1024px) {
+  @media screen and (width: 768px) and (height: 1024px) {
     width: 80%;
     height: 60%;
+  }
+
+  @media screen and (width: 1024px) and (height: 768px) {
+    height: 70%;
+    padding: 0;
   }
 
   @media screen and (width: 1024px) and (height: 1366px) {
@@ -34,6 +38,19 @@ const HomeContentWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 80%;
+
+  @media screen and (max-height: 281px) {
+    height: 80%;
+  }
+
+  @media screen and (max-width: 818px) {
+    height: 60%;
+  }
+
+  // IPad
+  @media screen and (width: 1024px) and (height: 768px) {
+    height: 50%;
+  }
 `
 
 const HomeContentMain = styled.main`
@@ -47,17 +64,24 @@ const HomeContentMain = styled.main`
     justify-content: flex-start;
   }
 
+  // IPad
   @media screen and (width: 768px) and (height: 1024px) {
     justify-content: flex-start;
   }
+
+  @media screen and (width: 1024px) and (height: 768px) {
+    margin-top: 5%;
+    justify-content: flex-start;
+  }
   
+  // IPad Pro
   @media screen and (width: 1024px) and (height: 1366px) {
     justify-content: flex-start;
   }
 `
 
 const HomeLogo = styled.h1`
-  font-size: 7vmax;
+  font-size: 9vmax;
   margin: 0;
   text-align: center;
 `
