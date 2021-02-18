@@ -31,25 +31,7 @@ const SloganWrapper = styled.div`
 `
 
 const Slogan = styled.span`
-  font-size: 1.6vmax;
-
-  @media screen and (max-width: 768px) {
-    font-size: 2.6vmax;
-  }
-
-  // IPad
-  @media screen and (width: 1024px) and (height: 768px) {
-    font-size: 2.8vmax;
-  }
-
-  // IPad Pro
-  @media screen and (width: 1024px) and (height: 1366px) {
-    font-size: 3.2vmax;
-  }
-
-  @media screen and (width: 1366px) and (height: 1024px) {
-    font-size: 3vmax;
-  }
+  font-size: 2vmax;
 `
 
 export default function NotFound() {

@@ -31,6 +31,15 @@ const globalStyle = css`
       align-items: center;
     }
   }
+
+  @media screen and (max-height: 410px) {
+    .layout {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   
   // IPad
   @media screen and (width: 768px) and (height: 1024px) {

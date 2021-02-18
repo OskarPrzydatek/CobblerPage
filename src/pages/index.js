@@ -39,12 +39,12 @@ const HomeContentWrapper = styled.div`
   align-items: center;
   height: 80%;
 
-  @media screen and (max-height: 281px) {
-    height: 80%;
-  }
-
   @media screen and (max-width: 818px) {
     height: 60%;
+  }
+
+  @media screen and (max-height: 360px) {
+    height: 100%;
   }
 
   // IPad
